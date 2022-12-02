@@ -55,8 +55,57 @@ body{
     color: var(--orange);
 }
 
-.header .logo a{
+.header .navbar a{
     font-size: 1.7rem;
     margin: 0 1rem;
     color: var(--black);
+}
+
+.header .navbar a:hover{
+    color:var(--orange);
+}
+
+.header .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--black);
+    font-size: 2rem;
+    margin-right: .3rem;
+    cursor: pointer;
+    text-align: center; 
+}
+
+.header .icons div:hover{
+    background: var(--orange);
+    color:#fff;
+}
+
+#menu-btn{
+    display: none;
+}
+
+.header .search-form{
+    position: absolute;
+    top: 110%; right: 2rem;
+    max-width: 50rem;
+    height: 4rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0 1rem;
 }
